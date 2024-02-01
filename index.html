@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0 maximum-scale=1.0" />
+    <title>🥵💦Grupo Pack Jovencitas🥵💦</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #e8e8e8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            max-width: 80%;
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			
+        }
+
+        h1 {
+            background-color: #075e54;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 0;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        #contenidoDesbloqueado {
+            margin-top: 20px;
+        }
+
+        .boton-desbloquear {
+            background-color: #25d366;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        a {
+            color: #25d366;
+            text-decoration: none;
+        }
+    </style>
+	<link rel="shortcut icon" href="images/what5.jpg">
+</head>
+<body>
+    <div class="container">
+		
+<img src="images/what5.jpg"   alt="200px" width="250px" height="200px" border-radius="100%px"  >		
+        <p>🥵💦Grupo Pack Jovencitas🥵💦<p>
+        <p>Comparte una vez en Whatsapp y vuelve aqui para acceder al grupo.</p>
+        <button id="compartir">Compartir en WhatsApp</button>
+
+        <div id="contenidoDesbloqueado" style="display: none;">
+            <h2>¡Ultimo paso completa una oferta para ingresar al grupo!</h2>
+            <p>:</p>
+            <iframe src="https://filestrue.com/1624360" height="500px" marginwidth="0" marginheight="0" align="middle" frameborder="0" width="50%"></iframe>
+				<a class="btn-fb1" href="https://filestrue.com/1624360" rel="noreferrer" name="btn-hack"></a>
+        </div>
+
+    <script>
+        var compartidos = 0;
+
+        document.getElementById("compartir").addEventListener("click", function() {
+            compartidos++;
+            
+            if (compartidos >= 2) {
+                document.getElementById("contenidoDesbloqueado").style.display = "block";
+                document.getElementById("compartir").style.display = "none";
+            } else {
+                alert("¡Comparte el contenido en un grupo o amigo interesado!");
+                compartirEnWhatsApp(); // Llama a la función compartirEnWhatsApp cuando se hace clic en "Compartir en WhatsApp"
+            }
+        });
+
+        // Función para compartir en WhatsApp
+        function compartirEnWhatsApp() {
+            // Contenido que deseas compartir (puede ser un enlace o texto)
+            var contenido = "¡Hackea Gratis cualquier red social que quieras 2024: https://monitoresocial.blogspot.com/";
+
+            // Verificar si el usuario está en un dispositivo móvil o en la web
+            var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+            if (isMobile) {
+                // Si el usuario está en un dispositivo móvil, abrir la aplicación de WhatsApp
+                window.location.href = "whatsapp://send?text=" + encodeURIComponent(contenido);
+            } else {
+                // Si el usuario está en la web, abrir una nueva ventana o pestaña con el enlace de WhatsApp
+                var enlaceWhatsApp = "https://web.whatsapp.com/send?text=" + encodeURIComponent(contenido);
+                window.open(enlaceWhatsApp, '_blank');
+            }
+        }
+    </script>
+</body>
+</html>
